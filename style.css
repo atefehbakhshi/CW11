@@ -1,0 +1,27 @@
+/* start table */
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border-top: 3px solid #b1cce6;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #d5dfe9;
+}
+
+table tr:nth-child(2) {
+    border-top: 3px solid #b1cce6;
+}
+
+table tr:nth-child(14) {
+    border-bottom: 3px solid #b1cce6;
+}
+
+/* end table */

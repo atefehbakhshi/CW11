@@ -1,13 +1,46 @@
-.sidebar {
+* {
     margin: 0;
     padding: 0;
-    width: 200px;
-    background-color: #f8f7f7;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
 }
 
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+/* start aside */
+
+.sidebar {
+    width: 20%;
+    background-color: #f8f7f7;
+}
+
+.links {
+    padding: 0 16px;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+}
+
+.link span {
+    font-size: 30px;
+}
+
+#saved-reports {
+    justify-content: space-between;
+}
+
+.companyname {
+    background-color: rgb(43, 41, 41);
+    color: rgb(224, 213, 213);
+    padding: 16px;
+}
 
 .sidebar a {
     display: block;
@@ -16,15 +49,118 @@
     text-decoration: none;
 }
 
-.sidebar a.Dashboard {
+.sidebar a.dashboard {
     color: rgb(3, 58, 255);
 }
 
-.Reportts {
-    margin-left: 200px;
-    padding: 1px 16px;
-    height: 1000px;
-}
-.sidebar a.SAVEDREPORTS {
+.sidebar a.saved-report {
     color: rgb(169, 171, 180);
 }
+
+/* end aside */
+/* start main */
+main {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.search-signout {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search {
+    width: 95%;
+    background-color: rgb(101, 100, 100);
+    color: rgb(183, 171, 171);
+    padding: 16px;
+}
+
+.signout {
+    width: 5%;
+    background-color: rgb(43, 41, 41);
+    color: rgb(184, 170, 170);
+    padding: 16px;
+}
+
+.left {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 32px;
+    align-items: center;
+}
+
+.right {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 32px;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin: 16px;
+}
+
+.buttons button {
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.select {
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 4px;
+}
+
+select {
+    font-size: 16px;
+    padding: 5px;
+    border: none;
+}
+
+hr {
+    height: 3px;
+    color: #b1cce6;
+    border-width: 0;
+    background-color: #b1cce6;
+    margin: 16px 32px;
+}
+
+/* start table */
+.table {
+    padding: 0 32px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border-top: 3px solid #b1cce6;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #d5dfe9;
+}
+
+table tr:nth-child(2) {
+    border-top: 3px solid #b1cce6;
+}
+
+table tr:nth-child(14) {
+    border-bottom: 3px solid #b1cce6;
+}
+
+/* end table */
+
+
+/* End main */
